@@ -21,15 +21,16 @@ import org.testng.annotations.AfterTest;
 
 public class SeleniumEasyAlertTests {
 	
-	SeleniumEasyAlertPage alertPage = new SeleniumEasyAlertPage();
+	SeleniumEasyAlertPage alertPage;
 	BrowserUtils utils = new BrowserUtils();
 	
 	
   @Test(priority=2, description="This is first Alert accept test.")
   public void firstAlertTest() throws InterruptedException {
 	  Driver.getDriver().get(PropertiesReader.getProperty("seleniumEasyAlertUrl"));
-	  alertPage.firstAlertBtn.click();
 	  
+	  alertPage = new SeleniumEasyAlertPage();
+	  alertPage.firstAlertBtn.click(); 
 	  // calling the swithToAlert function
 	  utils.switchToAlert();
 	  utils.waitUntilAlertIsPresent();
@@ -44,6 +45,7 @@ public class SeleniumEasyAlertTests {
   public void secondAlertTest() throws InterruptedException {
 	  String expectedMessage = "Press a button!";
 	  Driver.getDriver().get(PropertiesReader.getProperty("seleniumEasyAlertUrl"));
+	  alertPage = new SeleniumEasyAlertPage();
 	  alertPage.secondAlertBtn.click();
 	  utils.switchToAlert();
 	  utils.waitUntilAlertIsPresent();
@@ -57,7 +59,10 @@ public class SeleniumEasyAlertTests {
   public void thirdAlertTest() throws InterruptedException {
 	  String expectedMessage = "Please enter your name";
 	  Driver.getDriver().get(PropertiesReader.getProperty("seleniumEasyAlertUrl"));
+	  
+	  alertPage = new SeleniumEasyAlertPage();
 	  alertPage.thirdAlertBtn.click();
+	 
 	  utils.switchToAlert();
 	  String actualMessage = utils.alertGetText();
 	  Assert.assertEquals(actualMessage, expectedMessage);
@@ -69,13 +74,12 @@ public class SeleniumEasyAlertTests {
 	  
   }
   
-  @BeforeTest
+  @BeforeMethod
   public void beforeMethod() {
-	  Driver.getDriver();
 	  Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   }
 
-  @AfterTest
+  @AfterMethod
   public void afterTest() {
 	  Driver.quitDriver();
   }
