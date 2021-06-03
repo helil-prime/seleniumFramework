@@ -5,9 +5,9 @@
     <classes>
       <class name="tests.SeleniumEasyAlertTests">
         <methods>
-          <include name="secondAlertTest"/>
+          <include name="firstAlertTest"/>
           <include name="afterTest"/>
-          <include name="afterMethod"/>
+          <include name="thirdAlertTest"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- tests.SeleniumEasyAlertTests -->

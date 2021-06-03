@@ -19,6 +19,8 @@ public class SeleniumEasyAlertTests {
   @Test(priority=2, description="This is first Alert accept test.")
   public void firstAlertTest() throws InterruptedException {
 	  Driver.getDriver().get(PropertiesReader.getProperty("seleniumEasyAlertUrl"));
+	  alertPage = new SeleniumEasyAlertPage();
+	  alertPage.firstAlertBtn.click();
 	  
 	  alertPage = new SeleniumEasyAlertPage();
 	  alertPage.firstAlertBtn.click(); 
@@ -50,7 +52,6 @@ public class SeleniumEasyAlertTests {
   public void thirdAlertTest() throws InterruptedException {
 	  String expectedMessage = "Please enter your name";
 	  Driver.getDriver().get(PropertiesReader.getProperty("seleniumEasyAlertUrl"));
-	  
 	  alertPage = new SeleniumEasyAlertPage();
 	  alertPage.thirdAlertBtn.click();
 	 
