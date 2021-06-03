@@ -1,23 +1,14 @@
 package tests;
 
 import org.testng.annotations.Test;
-
 import pages.SeleniumEasyAlertPage;
 import utilities.BrowserUtils;
 import utilities.Driver;
 import utilities.PropertiesReader;
-
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 
 public class SeleniumEasyAlertTests {
 	
