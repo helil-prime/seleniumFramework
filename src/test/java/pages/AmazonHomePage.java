@@ -20,6 +20,12 @@ public class AmazonHomePage {
 	
 	@FindBy(xpath = "//a[text()='Sign in securely']")
 	public WebElement signInButton;
+	
+	@FindBy (id = "searchDropdownBox")
+	public WebElement departmentsDropdown;
+	
+	@FindBy (xpath="//div[@data-component-type='s-search-result']//span[@class='a-price-whole']")
+	public List<WebElement> searchItemPrices;
 
 
 }
