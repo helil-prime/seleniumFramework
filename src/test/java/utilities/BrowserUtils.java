@@ -8,6 +8,7 @@ public class BrowserUtils {
 
 	Alert alert;
 	WebDriverWait letswait;
+	static Select letsSelect;
 
 	public void switchToAlert() {
 		alert = Driver.getDriver().switchTo().alert();
@@ -29,10 +30,14 @@ public class BrowserUtils {
 		alert.sendKeys(name);
 	}
 	
-
 	public void waitUntilAlertIsPresent() {
 		letswait = new WebDriverWait(Driver.getDriver(), 10);
 		letswait.until(ExpectedConditions.alertIsPresent());
+	}
+	
+	public static void selectByVisibleText(WebElement element, String optionToSelect) {
+		letsSelect = new Select(element);
+		letsSelect.selectByVisibleText(optionToSelect);
 	}
 
 }
