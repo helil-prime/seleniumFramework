@@ -35,6 +35,11 @@ public class BrowserUtils {
 		letswait.until(ExpectedConditions.alertIsPresent());
 	}
 	
+	public void waitUntilElementVisible(WebElement element) {
+		letswait = new WebDriverWait(Driver.getDriver(), 10);
+		letswait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
 	public static void selectByVisibleText(WebElement element, String optionToSelect) {
 		letsSelect = new Select(element);
 		letsSelect.selectByVisibleText(optionToSelect);
