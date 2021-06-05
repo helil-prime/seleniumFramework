@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SeleniumEasy">
-  <test thread-count="5" name="Alerts">
+<suite name="Amazon" parallel="methods" thread-count="2">
+  <test name="cart">
     <classes>
-      <class name="tests.SeleniumEasyAlertTests"/>
+      <class name="tests.AmazonAddToCartTest"/>
+    </classes>
+  </test> <!-- Alerts -->
+  
+  <test name="account">
+    <classes>
+      <class name="tests.AmazonCreateAccountTest"/>
     </classes>
   </test> <!-- Alerts -->
 </suite> <!-- SeleniumEasy -->

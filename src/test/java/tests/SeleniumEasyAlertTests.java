@@ -20,9 +20,6 @@ public class SeleniumEasyAlertTests {
   public void firstAlertTest() throws InterruptedException {
 	  Driver.getDriver().get(PropertiesReader.getProperty("seleniumEasyAlertUrl"));
 	  alertPage = new SeleniumEasyAlertPage();
-	  alertPage.firstAlertBtn.click();
-	  
-	  alertPage = new SeleniumEasyAlertPage();
 	  alertPage.firstAlertBtn.click(); 
 	  // calling the swithToAlert function
 	  utils.switchToAlert();
@@ -32,6 +29,7 @@ public class SeleniumEasyAlertTests {
 	  Assert.assertEquals(actualMessage, expectedMessage);
 	  Thread.sleep(3000);
 	  utils.alertAccept();
+	  System.out.println("Thread id " + Thread.currentThread().getId());
   }
   
   @Test(priority=1, description="This is second Alert dismiss test.")
@@ -46,6 +44,7 @@ public class SeleniumEasyAlertTests {
 	  Assert.assertEquals(actualMessage, expectedMessage);
 	  Thread.sleep(3000);
 	  utils.alertDismiss();
+	  System.out.println("Thread id " + Thread.currentThread().getId());
   }
   
   @Test(priority=3, description="This is the Third Alert enter name test.")

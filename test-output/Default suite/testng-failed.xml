@@ -7,7 +7,6 @@
         <methods>
           <include name="firstAlertTest"/>
           <include name="afterTest"/>
-          <include name="thirdAlertTest"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- tests.SeleniumEasyAlertTests -->
