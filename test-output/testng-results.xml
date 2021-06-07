@@ -2,32 +2,76 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-04T18:27:29 EDT" name="Amazon" finished-at="2021-06-04T18:27:29 EDT" duration-ms="222">
+  <suite started-at="2021-06-06T12:13:46 EDT" name="Default suite" finished-at="2021-06-06T12:13:46 EDT" duration-ms="107">
     <groups>
     </groups>
-    <test started-at="2021-06-04T18:27:29 EDT" name="cart" finished-at="2021-06-04T18:27:29 EDT" duration-ms="83">
-      <class name="tests.AmazonAddToCartTest">
-        <test-method signature="f()[pri:0, instance:tests.AmazonAddToCartTest@51f116b8]" started-at="2021-06-04T18:27:29 EDT" name="f" finished-at="2021-06-04T18:27:29 EDT" duration-ms="15" status="PASS">
+    <test started-at="2021-06-06T12:13:46 EDT" name="Default test" finished-at="2021-06-06T12:13:46 EDT" duration-ms="107">
+      <class name="tests.AmazonSearchTest">
+        <test-method signature="testTest(java.lang.String,java.lang.String)[pri:0, instance:tests.AmazonSearchTest@e7edb54]" started-at="2021-06-06T12:13:46 EDT" name="testTest" data-provider="searchTest" finished-at="2021-06-06T12:13:46 EDT" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Coffee mug]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DC]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="test()[pri:0, instance:tests.AmazonAddToCartTest@51f116b8]" started-at="2021-06-04T18:27:29 EDT" name="test" finished-at="2021-06-04T18:27:29 EDT" duration-ms="15" status="PASS">
+        </test-method> <!-- testTest -->
+        <test-method signature="testTest(java.lang.String,java.lang.String)[pri:0, instance:tests.AmazonSearchTest@e7edb54]" started-at="2021-06-06T12:13:46 EDT" name="testTest" data-provider="searchTest" finished-at="2021-06-06T12:13:46 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cool Coffee mug]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chicago]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- tests.AmazonAddToCartTest -->
-    </test> <!-- cart -->
-    <test started-at="2021-06-04T18:27:29 EDT" name="account" finished-at="2021-06-04T18:27:29 EDT" duration-ms="18">
-      <class name="tests.AmazonCreateAccountTest">
-        <test-method signature="test()[pri:0, instance:tests.AmazonCreateAccountTest@6f46426d]" started-at="2021-06-04T18:27:29 EDT" name="test" finished-at="2021-06-04T18:27:29 EDT" duration-ms="5" status="PASS">
+        </test-method> <!-- testTest -->
+        <test-method signature="testTest(java.lang.String,java.lang.String)[pri:0, instance:tests.AmazonSearchTest@e7edb54]" started-at="2021-06-06T12:13:46 EDT" name="testTest" data-provider="searchTest" finished-at="2021-06-06T12:13:46 EDT" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cute Coffee mug]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LA]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="f()[pri:0, instance:tests.AmazonCreateAccountTest@6f46426d]" started-at="2021-06-04T18:27:29 EDT" name="f" finished-at="2021-06-04T18:27:29 EDT" duration-ms="4" status="PASS">
+        </test-method> <!-- testTest -->
+        <test-method signature="testTest(java.lang.String,java.lang.String)[pri:0, instance:tests.AmazonSearchTest@e7edb54]" started-at="2021-06-06T12:13:46 EDT" name="testTest" data-provider="searchTest" finished-at="2021-06-06T12:13:46 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ugly Coffee mug]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Reston]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- tests.AmazonCreateAccountTest -->
-    </test> <!-- account -->
-  </suite> <!-- Amazon -->
+        </test-method> <!-- testTest -->
+      </class> <!-- tests.AmazonSearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

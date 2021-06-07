@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SeleniumEasyAlertTests">
+      <class name="tests.AmazonSearchTest">
         <methods>
-          <include name="firstAlertTest"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
+          <include name="testTest"/>
         </methods>
-      </class> <!-- tests.SeleniumEasyAlertTests -->
+      </class> <!-- tests.AmazonSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
