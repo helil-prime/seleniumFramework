@@ -37,7 +37,11 @@ public class BrowserUtils {
 		letswait.until(ExpectedConditions.alertIsPresent());
 	}
 	
+<<<<<<< HEAD
 	public void waitUntilElementIsVisible(WebElement element) {
+=======
+	public void waitUntilElementVisible(WebElement element) {
+>>>>>>> ae2c62ebb5fb7cf810cb9520061753bfe1c61e6f
 		letswait = new WebDriverWait(Driver.getDriver(), 10);
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
