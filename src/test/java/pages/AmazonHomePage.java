@@ -30,7 +30,7 @@ public class AmazonHomePage {
 	public List<WebElement> searchItemPrices;
 	
 	@FindBy (xpath = "//span[@class='a-color-state a-text-bold']")
-	public WebElement searchCriteriaText;
+	public WebElement searchResultText;
 
 
 }
