@@ -63,8 +63,8 @@ public class AmazonSearchTest {
 	  Assert.assertTrue(amazonHP.searchBox.isDisplayed());
 	  amazonHP.searchBox.sendKeys(input);
 	  amazonHP.searchButton.click();
-	  utils.waitUntilElementIsVisible(amazonHP.searchCriteriaText);
-	  String searchText = amazonHP.searchCriteriaText.getText();
+	  utils.waitUntilElementIsVisible(amazonHP.searchResultText);
+	  String searchText = amazonHP.searchResultText.getText();
 	  System.out.println(searchText);
 	  String afterSubString = input.substring(0, input.length());
 	  Assert.assertEquals(afterSubString, input);
