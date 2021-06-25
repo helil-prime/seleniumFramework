@@ -29,8 +29,7 @@ public class AmazonHomePage {
 	@FindBy (xpath="//div[@data-component-type='s-search-result']//span[@class='a-price-whole']")
 	public List<WebElement> searchItemPrices;
 	
-	@FindBy (xpath = "//span[@class='a-color-state a-text-bold']")
-	public WebElement searchResultText;
+
 
 
 }
