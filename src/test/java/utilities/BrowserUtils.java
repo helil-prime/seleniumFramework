@@ -10,7 +10,7 @@ public class BrowserUtils {
 
 	Alert alert;
 	WebDriverWait letswait;
-	static Select letsSelect;
+	Select letsSelect;
 
 	public void switchToAlert() {
 		alert = Driver.getDriver().switchTo().alert();
@@ -36,12 +36,8 @@ public class BrowserUtils {
 		letswait = new WebDriverWait(Driver.getDriver(), 10);
 		letswait.until(ExpectedConditions.alertIsPresent());
 	}
-	
-<<<<<<< HEAD
-	public void waitUntilElementIsVisible(WebElement element) {
-=======
+
 	public void waitUntilElementVisible(WebElement element) {
->>>>>>> ae2c62ebb5fb7cf810cb9520061753bfe1c61e6f
 		letswait = new WebDriverWait(Driver.getDriver(), 10);
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
@@ -51,7 +47,7 @@ public class BrowserUtils {
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public static void selectByVisibleText(WebElement element, String optionToSelect) {
+	public void selectByVisibleText(WebElement element, String optionToSelect) {
 		letsSelect = new Select(element);
 		letsSelect.selectByVisibleText(optionToSelect);
 	}
