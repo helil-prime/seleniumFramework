@@ -33,7 +33,7 @@ public class AmazonSearchTest {
   public void dropDownTest() {
 	  Driver.getDriver().get(PropertiesReader.getProperty("amazonURL"));
 	  amazonHP = new AmazonHomePage();
-	  BrowserUtils.selectByVisibleText(amazonHP.departmentsDropdown, "Amazon Fresh");
+	  
   }
   
   @Test(dependsOnMethods = "amazonSearchTest")
